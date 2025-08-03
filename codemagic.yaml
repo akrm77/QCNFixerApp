@@ -1,1 +1,8 @@
-
+workflows:
+  my-first-build:
+    name: My First Build
+    environment:
+      flutter: stable
+    scripts:
+      - flutter pub get
+      - flutter build apk --release

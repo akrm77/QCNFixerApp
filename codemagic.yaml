@@ -1,11 +1,10 @@
 workflows:
-  my-first-build:
-    name: My First Build
+  build-ai-chat-app:
+    name: Build AI Chat Flutter App
     environment:
       flutter: stable
     scripts:
-      - cd some_folder   # هنا تدخل مجلد المشروع
       - flutter pub get
       - flutter build apk --release
     artifacts:
-      - some_folder/build/app/outputs/flutter-apk/app-release.apk
+      - build/app/outputs/flutter-apk/app-release.apk

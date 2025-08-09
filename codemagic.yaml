@@ -4,5 +4,8 @@ workflows:
     environment:
       flutter: stable
     scripts:
+      - cd some_folder   # هنا تدخل مجلد المشروع
       - flutter pub get
       - flutter build apk --release
+    artifacts:
+      - some_folder/build/app/outputs/flutter-apk/app-release.apk
